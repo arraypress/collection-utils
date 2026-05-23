@@ -1,0 +1,35 @@
+{
+  "name": "@arraypress/collection-utils",
+  "version": "1.0.0",
+  "description": "Aggregate + group collections by scalar or list taxonomy fields — primitives for taxonomy archive pages (tags, genres, artists, authors).",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test tests/collection-utils.test.js"
+  },
+  "keywords": [
+    "collection",
+    "aggregate",
+    "group-by",
+    "taxonomy",
+    "facet",
+    "tag-cloud",
+    "astro"
+  ],
+  "author": "David Sherlock",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arraypress/collection-utils"
+  }
+}
