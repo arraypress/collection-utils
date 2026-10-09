@@ -222,3 +222,5 @@ export function groupCollectionByListSlug(items, getField, options = {}) {
   }
   return bySlug;
 }
+
+export { sumBy, countBy, rankBy, ratio, percentChange } from './stats.js';

@@ -112,6 +112,24 @@ aggregateByScalarField(items, i => i.name, { slugFn: slugify });
 // → 'Crème Brûlée' → 'creme-brulee'
 ```
 
+### Report arithmetic
+
+The sums and rankings behind "top products", "orders by country" and
+"+12.5% on last month". Inputs are any iterable.
+
+```js
+import { sumBy, countBy, rankBy, ratio, percentChange } from '@arraypress/collection-utils';
+
+sumBy(orders, (o) => o.amount);                              // 18000
+countBy(orders, (o) => o.country);                           // Map { 'TH' => 2, 'GB' => 1 } (null keys left out)
+rankBy(lines, (l) => l.product, (l) => l.amount, 5);         // [{ name, count, total }, …] biggest total first
+ratio(3, 24);                                                // 0.125 (null when the whole is 0)
+percentChange(1350, 1200);                                   // 12.5 (null when the old value is 0)
+```
+
+`rankBy` orders by total, then count, then the order groups first
+appeared, so ties don't shuffle between runs.
+
 ## TypeScript
 
 Ships with `.d.ts`. Generic over the item type:

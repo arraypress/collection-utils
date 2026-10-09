@@ -1,7 +1,7 @@
 {
   "name": "@arraypress/collection-utils",
-  "version": "1.0.0",
-  "description": "Aggregate + group collections by scalar or list taxonomy fields — primitives for taxonomy archive pages (tags, genres, artists, authors).",
+  "version": "1.1.0",
+  "description": "Aggregate + group collections by scalar or list taxonomy fields — primitives for taxonomy archive pages (tags, genres, artists, authors) — plus the report arithmetic: sumBy, countBy, rankBy, ratio, percentChange.",
   "type": "module",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -15,7 +15,7 @@
     "src"
   ],
   "scripts": {
-    "test": "node --test tests/collection-utils.test.js"
+    "test": "node --test tests/"
   },
   "keywords": [
     "collection",

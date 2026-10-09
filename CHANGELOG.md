@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] — Unreleased
+## [1.1.0] — 2026-10-09
+
+### Added
+
+- Report arithmetic, over any iterable: `sumBy()`, `countBy()` (a `Map`,
+  first-seen order, null keys left out), `rankBy()` (groups counted and
+  totalled, ranked by total then count then first seen, with a limit),
+  `ratio()` (a divide that answers null instead of `Infinity`), and
+  `percentChange()` (null from zero). New type `Ranked`.
+
+## [1.0.0] — 2026-05-23
 
 ### Initial Release
 

@@ -72,3 +72,5 @@ export function groupCollectionByListSlug<T>(
   getField: (item: T) => readonly string[] | undefined | null,
   options?: AggregateOptions,
 ): Map<string, GroupedBucket<T>>;
+
+export * from './stats.js';
