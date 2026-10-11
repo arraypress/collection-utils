@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] — 2026-10-12
+
+### Added
+
+- `chunk(items, size)` — a list in pieces of at most `size`, in order;
+  `[]` for an empty list; a `RangeError` for a size that isn't a
+  positive integer.
+
 ## [1.1.0] — 2026-10-09
 
 ### Added

@@ -74,3 +74,4 @@ export function groupCollectionByListSlug<T>(
 ): Map<string, GroupedBucket<T>>;
 
 export * from './stats.js';
+export * from './chunk.js';

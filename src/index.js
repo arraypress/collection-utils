@@ -224,3 +224,4 @@ export function groupCollectionByListSlug(items, getField, options = {}) {
 }
 
 export { sumBy, countBy, rankBy, ratio, percentChange } from './stats.js';
+export { chunk } from './chunk.js';

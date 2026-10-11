@@ -130,6 +130,19 @@ percentChange(1350, 1200);                                   // 12.5 (null when 
 `rankBy` orders by total, then count, then the order groups first
 appeared, so ties don't shuffle between runs.
 
+### `chunk(items, size)`
+
+A list in pieces of at most `size`, in order — batches for an API that
+takes a few at a time, rows of a grid. Every piece is full but the last.
+
+```js
+import { chunk } from '@arraypress/collection-utils';
+
+chunk([1, 2, 3, 4, 5], 2); // [[1, 2], [3, 4], [5]]
+chunk([], 3);              // []
+chunk([1, 2], 0);          // throws a RangeError (size must be a positive integer)
+```
+
 ## TypeScript
 
 Ships with `.d.ts`. Generic over the item type:
